@@ -13,19 +13,6 @@ export default function Form () {
         favColour: ""
     })
 
-    const form = {
-        firstName: "",
-        lastName: "",
-        userName: "",
-        description: "",
-        isTrue: true,
-        tiers: "",
-        favColour: ""
-    }
-
-    console.log(formFields)
-
-
 
     function handleChange(event) {
         const {name, value, type, checked} = event.target
@@ -39,7 +26,6 @@ export default function Form () {
 
     function handleSubmit(event) {
         event.preventDefault()
-        setFormFields(prevState => form)
     }
 
     return (
